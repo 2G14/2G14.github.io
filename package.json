@@ -1,0 +1,25 @@
+{
+  "name": "2G14.github.io",
+  "version": "1.0.0",
+  "repository": "https://github.com/2G14/2G14.github.io",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "yarn build && open ./index.html",
+    "clean": "rm -r ./dist && mkdir dist",
+    "start": "yarn clean && yarn bundle",
+    "build": "webpack --mode development --colors --config ./webpack.config.dev.js"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-redux": "^7.0.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333"
+  }
+}
