@@ -4,6 +4,19 @@ test page is react + redux + typescript sample page now.
 
 I will test variable page.
 
+# src tree
+
+```none
+.
+├── index.html
+└── src
+    ├── Button.tsx
+    ├── Hello.tsx
+    ├── Input.tsx
+    ├── Output.tsx
+    └── index.tsx
+```
+
 # set up
 
 ```bash
