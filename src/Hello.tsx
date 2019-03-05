@@ -10,8 +10,7 @@ interface HelloProps {
 
 // State
 interface HelloState {
-  inputName: string;
-  outputName: string;
+  name: string;
 }
 
 // Hello Component
@@ -20,8 +19,7 @@ export class Hello extends React.Component<HelloProps, HelloState> {
   constructor(props: HelloProps) {
     super(props);
     this.state = {
-      inputName: "",
-      outputName: ""
+      name: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -29,14 +27,13 @@ export class Hello extends React.Component<HelloProps, HelloState> {
   // handleChange
   handleChange(event: React.FormEvent<HTMLInputElement>): void {
     this.setState({
-      inputName: event.currentTarget.value
+      name: event.currentTarget.value
     });
   }
   // handleClick
   handleClick(): void {
     this.setState({
-      inputName: "",
-      outputName: this.state.inputName
+      name: ""
     });
   }
   // render
@@ -44,9 +41,9 @@ export class Hello extends React.Component<HelloProps, HelloState> {
     const { greeting } = this.props;
     return (
       <div>
-        <Input name={this.state.inputName} handleChange={this.handleChange} />
+        <Output greeting={greeting} name={this.state.name} />
+        <Input name={this.state.name} handleChange={this.handleChange} />
         <Button handleClick={this.handleClick} />
-        <Output greeting={greeting} name={this.state.outputName} />
       </div>
     );
   }

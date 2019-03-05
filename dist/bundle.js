@@ -24660,7 +24660,7 @@ __webpack_require__.r(__webpack_exports__);
 // Button Component
 var Button = function (props) {
     var handleClick = props.handleClick;
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", { onClick: handleClick }, "Say Hello");
+    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", { onClick: handleClick }, "Clear");
 };
 
 
@@ -24705,8 +24705,7 @@ var Hello = /** @class */ (function (_super) {
     function Hello(props) {
         var _this = _super.call(this, props) || this;
         _this.state = {
-            inputName: "",
-            outputName: ""
+            name: ""
         };
         _this.handleChange = _this.handleChange.bind(_this);
         _this.handleClick = _this.handleClick.bind(_this);
@@ -24715,23 +24714,22 @@ var Hello = /** @class */ (function (_super) {
     // handleChange
     Hello.prototype.handleChange = function (event) {
         this.setState({
-            inputName: event.currentTarget.value
+            name: event.currentTarget.value
         });
     };
     // handleClick
     Hello.prototype.handleClick = function () {
         this.setState({
-            inputName: "",
-            outputName: this.state.inputName
+            name: ""
         });
     };
     // render
     Hello.prototype.render = function () {
         var greeting = this.props.greeting;
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Input__WEBPACK_IMPORTED_MODULE_1__["Input"], { name: this.state.inputName, handleChange: this.handleChange }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Button__WEBPACK_IMPORTED_MODULE_3__["Button"], { handleClick: this.handleClick }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Output__WEBPACK_IMPORTED_MODULE_2__["Output"], { greeting: greeting, name: this.state.outputName })));
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Output__WEBPACK_IMPORTED_MODULE_2__["Output"], { greeting: greeting, name: this.state.name }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Input__WEBPACK_IMPORTED_MODULE_1__["Input"], { name: this.state.name, handleChange: this.handleChange }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Button__WEBPACK_IMPORTED_MODULE_3__["Button"], { handleClick: this.handleClick })));
     };
     return Hello;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
@@ -24778,13 +24776,19 @@ __webpack_require__.r(__webpack_exports__);
 // OutputComponent
 var Output = function (props) {
     var greeting = props.greeting, name = props.name;
-    var hasName = name !== "";
-    var result = hasName ? (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null,
+    /*
+    const hasName: boolean = name !== "";
+    const result: JSX.Element | "" = hasName ? (
+      <h1>
+        {greeting} {name}!
+      </h1>
+    ) : (
+      ""
+    );*/
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null,
         greeting,
         " ",
-        name,
-        "!")) : ("");
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, result);
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, name)));
 };
 
 
