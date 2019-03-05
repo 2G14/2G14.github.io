@@ -5,7 +5,8 @@
   "scripts": {
     "clean": "rm -fr ./dist/*",
     "build": "webpack --colors --display-modules --config ./webpack.config.dev.js",
-    "bundle": "yarn clean && yarn build && open ./index.html"
+    "open": "open ./index.html",
+    "bundle": "yarn clean && yarn build && yarn open"
   },
   "dependencies": {
     "react": "^16.8.3",
