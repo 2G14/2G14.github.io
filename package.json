@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@types/react": "^16.8.6",
     "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^4.3.1",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.3333"
   }

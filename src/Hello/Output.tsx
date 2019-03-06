@@ -9,15 +9,6 @@ interface OutputProps {
 // OutputComponent
 export const Output: React.SFC<OutputProps> = props => {
   const { greeting, name }: OutputProps = props;
-  /*
-  const hasName: boolean = name !== "";
-  const result: JSX.Element | "" = hasName ? (
-    <h1>
-      {greeting} {name}!
-    </h1>
-  ) : (
-    ""
-  );*/
   return (
     <h1>
       {greeting} <div>{name}</div>

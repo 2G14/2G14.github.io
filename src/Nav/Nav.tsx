@@ -1,32 +1,8 @@
 import * as React from "react";
-//import { Hello } from "./Hello/Hello";
-//import { Nav } from "./Nav/Nav";
 import { BrowserRouter, Link, Route } from "react-router-dom";
+//import { Hello } from "./../Hello/Hello";
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-    <p>Welcome to Home Page</p>
-  </div>
-);
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-    <p>Welcome to About Page</p>
-  </div>
-);
-
-const Friends = () => (
-  <div>
-    <h2>Friends</h2>
-    <p>Welcome to Friends Page</p>
-  </div>
-);
-
-// App Component
-export class App extends React.Component {
-  // render
+export class Nav extends React.Component {
   render() {
     return (
       <BrowserRouter>
@@ -51,3 +27,24 @@ export class App extends React.Component {
     );
   }
 }
+
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+    <p>Welcome to Home Page</p>
+  </div>
+);
+
+const About = () => (
+  <div>
+    <h2>About</h2>
+    <p>Welcome to About Page</p>
+  </div>
+);
+
+const Friends = () => (
+  <div>
+    <h2>Friends</h2>
+    <p>Welcome to Friends Page</p>
+  </div>
+);
