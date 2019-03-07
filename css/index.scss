@@ -6,25 +6,36 @@ body {
   background-color: black;
 }
 
+$nav-border-color: #ccc;
+$active-color: #0072ff;
+
 .content {
   margin: 0;
   padding: 0;
+  div {
+    nav {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      border-bottom: 1px solid $nav-border-color;
+      box-shadow: 1px 1px 3px $nav-border-color;
+      .header-item {
+        color: #777;
+        padding: 0.85rem 2rem;
+        &.active {
+          color: $active-color;
+          font-weight: bold;
+          border-bottom: 2px solid $active-color;
+        }
+      }
+    }
+  }
   h1 {
-    margin: 0;
-    padding: 0;
-    border-top: 20px solid darkmagenta;
-    border-bottom: 20px solid darkmagenta;
+    //    border-top: 20px solid darkmagenta;
+    //    border-bottom: 20px solid darkmagenta;
     div {
       display: inline-block;
       color: magenta;
     }
   }
-/*  input {
-    width: 100%;
-    height: 300%;
-  }
-  button {
-    width: 100%;
-    height: 300%;
-  }*/
 }

@@ -18,16 +18,20 @@ export class Hello extends React.Component<HelloProps, HelloState> {
   // constructor
   constructor(props: HelloProps) {
     super(props);
+    const name: string = String(sessionStorage.getItem("name"));
     this.state = {
-      name: ""
+      name: name
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
   // handleChange
   handleChange(event: React.FormEvent<HTMLInputElement>): void {
+    const name: string = event.currentTarget.value;
+    sessionStorage.setItem("name", name);
     this.setState({
-      name: event.currentTarget.value
+//      name: event.currentTarget.value
+      name: name
     });
   }
   // handleClick
@@ -35,6 +39,7 @@ export class Hello extends React.Component<HelloProps, HelloState> {
     this.setState({
       name: ""
     });
+    sessionStorage.removeItem("name");
   }
   // render
   render(): JSX.Element {

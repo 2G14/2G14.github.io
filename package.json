@@ -7,7 +7,8 @@
     "build": "webpack --colors --display-modules --config ./webpack.config.dev.js",
     "scss": "node-sass css/index.scss css/index.css",
     "open": "open ./index.html",
-    "bundle": "yarn clean && yarn build && yarn open"
+    "bundle": "yarn clean && yarn build && yarn open",
+    "test": "node test.server.js"
   },
   "dependencies": {
     "react": "^16.8.3",
