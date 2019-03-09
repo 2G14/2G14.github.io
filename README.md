@@ -11,15 +11,20 @@ I will test variable page.
 ├── test.server.js
 ├── index.html
 └── src/
-    ├── About/
-    │   └── About.tsx
     ├── App.tsx
-    ├── Hello/
-    │   ├── Button.tsx
-    │   ├── Hello.tsx
-    │   ├── Input.tsx
-    │   └── Output.tsx
-    ├── header.tsx
+    ├── Content/
+    │   ├── About/
+    │   │   └── About.tsx
+    │   ├── Friends/
+    │   │   └── Friends.tsx
+    │   ├── Hello/
+    │   │   ├── Button.tsx
+    │   │   ├── Hello.tsx
+    │   │   ├── Input.tsx
+    │   │   └── Output.tsx
+    │   ├── header.tsx
+    │   ├── link.tsx
+    │   └── main.tsx
     └── index.tsx
 ```
 
