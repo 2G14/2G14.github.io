@@ -18,7 +18,8 @@ export class Hello extends React.Component<HelloProps, HelloState> {
   // constructor
   constructor(props: HelloProps) {
     super(props);
-    const name: string = String(sessionStorage.getItem("name"));
+    const tmp: string | null = sessionStorage.getItem("name");
+    const name: string = tmp !== null ? String(tmp) : "";
     this.state = {
       name: name
     };

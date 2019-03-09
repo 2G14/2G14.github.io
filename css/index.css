@@ -5,22 +5,36 @@ body {
   color: white;
   background-color: black; }
 
-.content {
+#app {
   margin: 0;
   padding: 0; }
-  .content div nav {
-    display: flex;
-    align-items: center;
-    height: 3rem;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 1px 1px 3px #ccc; }
-    .content div nav .header-item {
-      color: #777;
-      padding: 0.85rem 2rem; }
-      .content div nav .header-item.active {
-        color: #0072ff;
-        font-weight: bold;
-        border-bottom: 2px solid #0072ff; }
-  .content h1 div {
-    display: inline-block;
-    color: magenta; }
+  #app div header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3rem; }
+    #app div header nav {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 1px 1px 3px #ccc; }
+      #app div header nav ul {
+        margin: 0;
+        padding: 0; }
+        #app div header nav ul li {
+          display: inline-block; }
+          #app div header nav ul li .header-item {
+            color: #777;
+            padding: 0.85rem 2rem; }
+            #app div header nav ul li .header-item.active {
+              color: #0072ff;
+              font-weight: bold;
+              border-bottom: 2px solid #0072ff; }
+  #app div main {
+    padding: 3rem 0 0 0; }
+    #app div main h1 div {
+      display: inline-block;
+      color: magenta; }

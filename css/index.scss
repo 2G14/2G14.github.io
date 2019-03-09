@@ -9,33 +9,51 @@ body {
 $nav-border-color: #ccc;
 $active-color: #0072ff;
 
-.content {
+#app {
   margin: 0;
   padding: 0;
   div {
-    nav {
-      display: flex;
-      align-items: center;
+    header {
+      background-color: black;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
       height: 3rem;
-      border-bottom: 1px solid $nav-border-color;
-      box-shadow: 1px 1px 3px $nav-border-color;
-      .header-item {
-        color: #777;
-        padding: 0.85rem 2rem;
-        &.active {
-          color: $active-color;
-          font-weight: bold;
-          border-bottom: 2px solid $active-color;
+      nav {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        border-bottom: 1px solid $nav-border-color;
+        box-shadow: 1px 1px 3px $nav-border-color;
+        ul {
+          margin: 0;
+          padding: 0;        
+          li {
+            display: inline-block;
+            .header-item {
+              color: #777;
+              padding: 0.85rem 2rem;
+              &.active {
+                color: $active-color;
+                font-weight: bold;
+                border-bottom: 2px solid $active-color;
+              }
+            }
+          }
         }
       }
     }
-  }
-  h1 {
-    //    border-top: 20px solid darkmagenta;
-    //    border-bottom: 20px solid darkmagenta;
-    div {
-      display: inline-block;
-      color: magenta;
+    main {
+      padding: 3rem 0 0 0;
+      h1 {
+        //    border-top: 20px solid darkmagenta;
+        //    border-bottom: 20px solid darkmagenta;
+        div {
+          display: inline-block;
+          color: magenta;
+        }
+      }
     }
   }
 }

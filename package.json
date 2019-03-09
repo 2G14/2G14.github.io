@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -fr ./dist/*",
+    "clean": "rm -rf ./dist/*",
     "build": "webpack --colors --display-modules --config ./webpack.config.dev.js",
     "scss": "node-sass css/index.scss css/index.css",
     "open": "open ./index.html",
-    "bundle": "yarn clean && yarn build && yarn open",
+    "bundle": "yarn clean && yarn build",
     "test": "node test.server.js"
   },
   "dependencies": {

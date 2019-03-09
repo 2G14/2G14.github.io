@@ -1,23 +1,29 @@
 # GitHub Pages
 
-test page is react + redux + typescript sample page now.
-
+## about
+test page is react + typescript sample page now.
 I will test variable page.
 
-# src tree
+## src tree
 
 ```none
 .
+├── test.server.js
 ├── index.html
-└── src
-    ├── Button.tsx
-    ├── Hello.tsx
-    ├── Input.tsx
-    ├── Output.tsx
+└── src/
+    ├── About/
+    │   └── About.tsx
+    ├── App.tsx
+    ├── Hello/
+    │   ├── Button.tsx
+    │   ├── Hello.tsx
+    │   ├── Input.tsx
+    │   └── Output.tsx
+    ├── header.tsx
     └── index.tsx
 ```
 
-# set up
+## set up
 
 ```bash
 $ yarn init --yes
@@ -35,4 +41,5 @@ $ vim package.json # write scripts
 
 ```bash
 $ yarn bundle
+$ yarn test # open http://localhost:8080 in your browser
 ```
