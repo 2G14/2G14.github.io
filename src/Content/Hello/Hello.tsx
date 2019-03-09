@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Input } from "./Input";
-import { Output } from "./Output";
-import { Button } from "./Button";
+//import { Input } from "./Input";
+//import { Output } from "./Output";
+//import { Button } from "./Button";
 
 // Props
 interface HelloProps {
@@ -31,7 +31,6 @@ export class Hello extends React.Component<HelloProps, HelloState> {
     const name: string = event.currentTarget.value;
     sessionStorage.setItem("name", name);
     this.setState({
-//      name: event.currentTarget.value
       name: name
     });
   }
@@ -47,10 +46,20 @@ export class Hello extends React.Component<HelloProps, HelloState> {
     const { greeting } = this.props;
     return (
       <div>
-        <Output greeting={greeting} name={this.state.name} />
-        <Input name={this.state.name} handleChange={this.handleChange} />
-        <Button handleClick={this.handleClick} />
+        <h1>
+          {greeting} <div>{this.state.name}</div>
+        </h1>
+        <input
+          type="text"
+          placeholder="Input any name."
+          value={this.state.name}
+          onChange={this.handleChange}
+        />
+        <button onClick={this.handleClick}>Clear</button>
       </div>
     );
+    //    <Output greeting={greeting} name={this.state.name} />
+    //    <Input name={this.state.name} handleChange={this.handleChange} />
+    //    <Button handleClick={this.handleClick} />
   }
 }

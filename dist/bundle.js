@@ -29118,10 +29118,62 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ "./src/About/About.tsx":
-/*!*****************************!*\
-  !*** ./src/About/About.tsx ***!
-  \*****************************/
+/***/ "./src/App.tsx":
+/*!*********************!*\
+  !*** ./src/App.tsx ***!
+  \*********************/
+/*! exports provided: App */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App", function() { return App; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Content_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Content/header */ "./src/Content/header.tsx");
+/* harmony import */ var _Content_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Content/main */ "./src/Content/main.tsx");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+// App Component
+var App = /** @class */ (function (_super) {
+    __extends(App, _super);
+    function App() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    // render
+    App.prototype.render = function () {
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], null,
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Content_header__WEBPACK_IMPORTED_MODULE_2__["Header"], null),
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Content_main__WEBPACK_IMPORTED_MODULE_3__["Main"], null))));
+    };
+    return App;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/Content/About/About.tsx":
+/*!*************************************!*\
+  !*** ./src/Content/About/About.tsx ***!
+  \*************************************/
 /*! exports provided: About */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29165,21 +29217,18 @@ var About = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ "./src/App.tsx":
-/*!*********************!*\
-  !*** ./src/App.tsx ***!
-  \*********************/
-/*! exports provided: App */
+/***/ "./src/Content/Friends/Friends.tsx":
+/*!*****************************************!*\
+  !*** ./src/Content/Friends/Friends.tsx ***!
+  \*****************************************/
+/*! exports provided: Friends */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App", function() { return App; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Friends", function() { return Friends; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-/* harmony import */ var _Hello_Hello__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Hello/Hello */ "./src/Hello/Hello.tsx");
-/* harmony import */ var _About_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./About/About */ "./src/About/About.tsx");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -29194,135 +29243,95 @@ var __extends = (undefined && undefined.__extends) || (function () {
     };
 })();
 
-
-
-
-// App Component
-var App = /** @class */ (function (_super) {
-    __extends(App, _super);
-    function App() {
+// Friends Component
+var Friends = /** @class */ (function (_super) {
+    __extends(Friends, _super);
+    function Friends() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     // render
-    App.prototype.render = function () {
-        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], null,
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", null,
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("nav", null,
-                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null,
-                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
-                                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], { exact: true, to: "/", className: "header-item", activeClassName: "active" }, "Home")),
-                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
-                                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], { to: "/about", className: "header-item", activeClassName: "active" }, "About")),
-                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
-                                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], { to: "/friends", className: "header-item", activeClassName: "active" }, "Friends"))))),
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("main", null,
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: "/", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Hello_Hello__WEBPACK_IMPORTED_MODULE_2__["Hello"], { greeting: "Hello!!" }); } }),
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: "/about", component: _About_About__WEBPACK_IMPORTED_MODULE_3__["About"] }),
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: "/friends", component: Friends })))));
+    Friends.prototype.render = function () {
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Friends"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page")));
     };
-    return App;
+    return Friends;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
 
-var Friends = function () { return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Friends"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"),
-    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to Friends Page"))); };
 
 
 /***/ }),
 
-/***/ "./src/Hello/Button.tsx":
-/*!******************************!*\
-  !*** ./src/Hello/Button.tsx ***!
-  \******************************/
-/*! exports provided: Button */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-// Button Component
-var Button = function (props) {
-    var handleClick = props.handleClick;
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", { onClick: handleClick }, "Clear");
-};
-
-
-/***/ }),
-
-/***/ "./src/Hello/Hello.tsx":
-/*!*****************************!*\
-  !*** ./src/Hello/Hello.tsx ***!
-  \*****************************/
+/***/ "./src/Content/Hello/Hello.tsx":
+/*!*************************************!*\
+  !*** ./src/Content/Hello/Hello.tsx ***!
+  \*************************************/
 /*! exports provided: Hello */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29331,9 +29340,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hello", function() { return Hello; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Input */ "./src/Hello/Input.tsx");
-/* harmony import */ var _Output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Output */ "./src/Hello/Output.tsx");
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Button */ "./src/Hello/Button.tsx");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -29347,9 +29353,6 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-
-
-
 
 // Hello Component
 var Hello = /** @class */ (function (_super) {
@@ -29371,7 +29374,6 @@ var Hello = /** @class */ (function (_super) {
         var name = event.currentTarget.value;
         sessionStorage.setItem("name", name);
         this.setState({
-            //      name: event.currentTarget.value
             name: name
         });
     };
@@ -29386,9 +29388,15 @@ var Hello = /** @class */ (function (_super) {
     Hello.prototype.render = function () {
         var greeting = this.props.greeting;
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Output__WEBPACK_IMPORTED_MODULE_2__["Output"], { greeting: greeting, name: this.state.name }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Input__WEBPACK_IMPORTED_MODULE_1__["Input"], { name: this.state.name, handleChange: this.handleChange }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Button__WEBPACK_IMPORTED_MODULE_3__["Button"], { handleClick: this.handleClick })));
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null,
+                greeting,
+                " ",
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, this.state.name)),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { type: "text", placeholder: "Input any name.", value: this.state.name, onChange: this.handleChange }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", { onClick: this.handleClick }, "Clear")));
+        //    <Output greeting={greeting} name={this.state.name} />
+        //    <Input name={this.state.name} handleChange={this.handleChange} />
+        //    <Button handleClick={this.handleClick} />
     };
     return Hello;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
@@ -29397,49 +29405,168 @@ var Hello = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ "./src/Hello/Input.tsx":
-/*!*****************************!*\
-  !*** ./src/Hello/Input.tsx ***!
-  \*****************************/
-/*! exports provided: Input */
+/***/ "./src/Content/header.tsx":
+/*!********************************!*\
+  !*** ./src/Content/header.tsx ***!
+  \********************************/
+/*! exports provided: Header */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-// Input Component
-var Input = function (props) {
-    var name = props.name, handleChange = props.handleChange;
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { type: "text", placeholder: "Input any name.", value: name, onChange: handleChange }));
+/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./link */ "./src/Content/link.tsx");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
+
+
+// Header Component
+var Header = /** @class */ (function (_super) {
+    __extends(Header, _super);
+    function Header() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    // render
+    Header.prototype.render = function () {
+        var home = { exact: true, name: "Home", to: "/" };
+        var about = { exact: false, name: "About", to: "/about" };
+        var friends = { exact: false, name: "Friends", to: "/friends" };
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", null,
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("nav", null,
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null,
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, home)),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, about)),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, friends))))));
+    };
+    return Header;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
 
 
 /***/ }),
 
-/***/ "./src/Hello/Output.tsx":
+/***/ "./src/Content/link.tsx":
 /*!******************************!*\
-  !*** ./src/Hello/Output.tsx ***!
+  !*** ./src/Content/link.tsx ***!
   \******************************/
-/*! exports provided: Output */
+/*! exports provided: LinkList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Output", function() { return Output; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkList", function() { return LinkList; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 
-// OutputComponent
-var Output = function (props) {
-    var greeting = props.greeting, name = props.name;
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null,
-        greeting,
-        " ",
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, name)));
-};
+
+// LinkList Component
+var LinkList = /** @class */ (function (_super) {
+    __extends(LinkList, _super);
+    // constructor
+    function LinkList(props) {
+        return _super.call(this, props) || this;
+    }
+    // render
+    LinkList.prototype.render = function () {
+        var _a = this.props, exact = _a.exact, name = _a.name, to = _a.to;
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], { exact: exact, to: to, className: "header-item", activeClassName: "active" }, name)));
+    };
+    return LinkList;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/Content/main.tsx":
+/*!******************************!*\
+  !*** ./src/Content/main.tsx ***!
+  \******************************/
+/*! exports provided: Main */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Main", function() { return Main; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Hello_Hello__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Hello/Hello */ "./src/Content/Hello/Hello.tsx");
+/* harmony import */ var _About_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./About/About */ "./src/Content/About/About.tsx");
+/* harmony import */ var _Friends_Friends__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Friends/Friends */ "./src/Content/Friends/Friends.tsx");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+
+// Main Component
+var Main = /** @class */ (function (_super) {
+    __extends(Main, _super);
+    function Main() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    // render
+    Main.prototype.render = function () {
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("main", null,
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: "/", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Hello_Hello__WEBPACK_IMPORTED_MODULE_2__["Hello"], { greeting: "Hello!!" }); } }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: "/about", component: _About_About__WEBPACK_IMPORTED_MODULE_3__["About"] }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: "/friends", component: _Friends_Friends__WEBPACK_IMPORTED_MODULE_4__["Friends"] })));
+    };
+    return Main;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
 
 
 /***/ }),
