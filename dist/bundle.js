@@ -29366,7 +29366,6 @@ var Hello = /** @class */ (function (_super) {
             name: name
         };
         _this.handleChange = _this.handleChange.bind(_this);
-        _this.handleClick = _this.handleClick.bind(_this);
         return _this;
     }
     // handleChange
@@ -29377,13 +29376,6 @@ var Hello = /** @class */ (function (_super) {
             name: name
         });
     };
-    // handleClick
-    Hello.prototype.handleClick = function () {
-        this.setState({
-            name: ""
-        });
-        sessionStorage.removeItem("name");
-    };
     // render
     Hello.prototype.render = function () {
         var greeting = this.props.greeting;
@@ -29392,11 +29384,7 @@ var Hello = /** @class */ (function (_super) {
                 greeting,
                 " ",
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, this.state.name)),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { type: "text", placeholder: "Input any name.", value: this.state.name, onChange: this.handleChange }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", { onClick: this.handleClick }, "Clear")));
-        //    <Output greeting={greeting} name={this.state.name} />
-        //    <Input name={this.state.name} handleChange={this.handleChange} />
-        //    <Button handleClick={this.handleClick} />
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { type: "text", placeholder: "Input any name.", value: this.state.name, onChange: this.handleChange })));
     };
     return Hello;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));

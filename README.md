@@ -18,10 +18,7 @@ I will test variable page.
     │   ├── Friends/
     │   │   └── Friends.tsx
     │   ├── Hello/
-    │   │   ├── Button.tsx
-    │   │   ├── Hello.tsx
-    │   │   ├── Input.tsx
-    │   │   └── Output.tsx
+    │   │   └── Hello.tsx
     │   ├── header.tsx
     │   ├── link.tsx
     │   └── main.tsx

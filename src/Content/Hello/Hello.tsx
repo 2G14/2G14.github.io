@@ -1,7 +1,4 @@
 import * as React from "react";
-//import { Input } from "./Input";
-//import { Output } from "./Output";
-//import { Button } from "./Button";
 
 // Props
 interface HelloProps {
@@ -24,7 +21,6 @@ export class Hello extends React.Component<HelloProps, HelloState> {
       name: name
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
   // handleChange
   handleChange(event: React.FormEvent<HTMLInputElement>): void {
@@ -33,13 +29,6 @@ export class Hello extends React.Component<HelloProps, HelloState> {
     this.setState({
       name: name
     });
-  }
-  // handleClick
-  handleClick(): void {
-    this.setState({
-      name: ""
-    });
-    sessionStorage.removeItem("name");
   }
   // render
   render(): JSX.Element {
@@ -55,11 +44,7 @@ export class Hello extends React.Component<HelloProps, HelloState> {
           value={this.state.name}
           onChange={this.handleChange}
         />
-        <button onClick={this.handleClick}>Clear</button>
       </div>
     );
-    //    <Output greeting={greeting} name={this.state.name} />
-    //    <Input name={this.state.name} handleChange={this.handleChange} />
-    //    <Button handleClick={this.handleClick} />
   }
 }
