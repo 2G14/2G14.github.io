@@ -8,13 +8,14 @@ export class Header extends React.Component {
     const home = { exact: true, name: "Home", to: "/" };
     const about = { exact: false, name: "About", to: "/about" };
     const friends = { exact: false, name: "Friends", to: "/friends" };
+    const pages = [home, about, friends];
     return (
       <header>
         <nav>
           <ul>
-            <LinkList {...home} />
-            <LinkList {...about} />
-            <LinkList {...friends} />
+            {pages.map(page => {
+              return <LinkList {...page} />;
+            })}
           </ul>
         </nav>
       </header>

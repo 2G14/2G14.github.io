@@ -29443,12 +29443,12 @@ var Header = /** @class */ (function (_super) {
         var home = { exact: true, name: "Home", to: "/" };
         var about = { exact: false, name: "About", to: "/about" };
         var friends = { exact: false, name: "Friends", to: "/friends" };
+        var pages = [home, about, friends];
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", null,
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("nav", null,
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null,
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, home)),
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, about)),
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, friends))))));
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, pages.map(function (page) {
+                    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, page));
+                })))));
     };
     return Header;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
