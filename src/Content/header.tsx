@@ -7,8 +7,8 @@ export class Header extends React.Component {
   render() {
     const home = { exact: true, name: "Home", to: "/" };
     const about = { exact: false, name: "About", to: "/about" };
-    const friends = { exact: false, name: "Friends", to: "/friends" };
-    const pages = [home, about, friends];
+    const Welcome = { exact: false, name: "Welcome", to: "/welcome" };
+    const pages = [home, about, Welcome];
     return (
       <header>
         <nav>

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Route } from "react-router-dom";
 import { Hello } from "./Hello/Hello";
 import { About } from "./About/About";
-import { Friends } from "./Friends/Friends";
+import { Welcome } from "./Welcome/Welcome";
 
 // Main Component
 export class Main extends React.Component {
@@ -12,7 +12,7 @@ export class Main extends React.Component {
       <main>
         <Route exact path="/" render={() => <Hello greeting="Hello!!" />} />
         <Route path="/about" component={About} />
-        <Route path="/friends" component={Friends} />
+        <Route path="/welcome" component={Welcome} />
       </main>
     );
   }

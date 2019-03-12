@@ -15,8 +15,8 @@ I will test variable page.
     ├── Content/
     │   ├── About/
     │   │   └── About.tsx
-    │   ├── Friends/
-    │   │   └── Friends.tsx
+    │   ├── Welcome/
+    │   │   └── Welcome.tsx
     │   ├── Hello/
     │   │   └── Hello.tsx
     │   ├── header.tsx
