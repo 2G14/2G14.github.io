@@ -29272,7 +29272,7 @@ var Hello = /** @class */ (function (_super) {
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null,
                 greeting,
                 " ",
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, this.state.name)),
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "user-name" }, this.state.name)),
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { type: "text", placeholder: "Input any name.", value: this.state.name, onChange: this.handleChange })));
     };
     return Hello;
@@ -29323,105 +29323,21 @@ var Welcome = /** @class */ (function (_super) {
     }
     // render
     Welcome.prototype.render = function () {
+        // 同じものを100行生成
+        var lines = [];
+        for (var i = 0; i < 100; i++)
+            lines.push(this.state.name);
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Welcome"),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](WelcomeLine, null)));
+            lines.map(function (line) {
+                return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null,
+                    "Welcome to My GitHub Pages ",
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "user-name" }, line));
+            })));
     };
     return Welcome;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
 
-var WelcomeLine = function () {
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to My GitHub Pages");
-};
 
 
 /***/ }),

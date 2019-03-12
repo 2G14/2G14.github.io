@@ -36,7 +36,7 @@ export class Hello extends React.Component<HelloProps, HelloState> {
     return (
       <div>
         <h1>
-          {greeting} <div>{this.state.name}</div>
+          {greeting} <div className="user-name" >{this.state.name}</div>
         </h1>
         <input
           type="text"

@@ -19,104 +19,17 @@ export class Welcome extends React.Component<WelcomeProps, WelcomeState> {
   }
   // render
   render() {
+    // 同じものを100行生成
+    const lines: string[] = [];
+    for (let i = 0; i < 100; i++) lines.push(this.state.name);
+    
     return (
       <div>
         <h1>Welcome</h1>
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
-        <WelcomeLine />
+        {lines.map(line => {
+          return <p>Welcome to My GitHub Pages <div className="user-name">{line}</div></p>;
+        })}
       </div>
     );
   }
 }
-
-const WelcomeLine = () => {
-  return <p>Welcome to My GitHub Pages</p>;
-};
