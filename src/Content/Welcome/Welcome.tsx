@@ -27,9 +27,16 @@ export class Welcome extends React.Component<WelcomeProps, WelcomeState> {
     return (
       <div>
         <h1>Welcome</h1>
-        {lines.map(line => {
-          return <p>Welcome to My GitHub Pages <div className="user-name">{line}</div></p>;
-        })}
+        <ul>
+          {lines.map((line, i) => {
+            return (
+              <li key={i}>
+                Welcome to My GitHub Pages{" "}
+                <div className="user-name">{line}</div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }

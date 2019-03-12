@@ -13,8 +13,8 @@ export class Header extends React.Component {
       <header>
         <nav>
           <ul>
-            {pages.map(page => {
-              return <LinkList {...page} />;
+            {pages.map((page, i) => {
+              return <LinkList key={i} {...page} />;
             })}
           </ul>
         </nav>

@@ -29329,11 +29329,12 @@ var Welcome = /** @class */ (function (_super) {
             lines.push(this.state.name);
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Welcome"),
-            lines.map(function (line) {
-                return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null,
-                    "Welcome to My GitHub Pages ",
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "user-name" }, line));
-            })));
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, lines.map(function (line, i) {
+                return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", { key: i },
+                    "Welcome to My GitHub Pages",
+                    " ",
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "user-name" }, line)));
+            }))));
     };
     return Welcome;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
@@ -29395,8 +29396,8 @@ var Header = /** @class */ (function (_super) {
         var pages = [home, about, Welcome];
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", null,
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("nav", null,
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, pages.map(function (page) {
-                    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({}, page));
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, pages.map(function (page, i) {
+                    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({ key: i }, page));
                 })))));
     };
     return Header;
