@@ -37,11 +37,7 @@ body {
               font-weight: bold;
               border-bottom: 2px solid #0072ff; }
   #app div main {
-    padding: 3rem 0 0 0;
-    /*        div {
-          display: inline-block;
-          color: magenta;
-        }*/ }
+    padding: 3rem 0 0 0; }
     #app div main .user-name {
       display: inline-block;
       color: magenta; }

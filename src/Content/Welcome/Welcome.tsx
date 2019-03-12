@@ -1,7 +1,9 @@
 import * as React from "react";
 
+// Peops
 interface WelcomeProps {}
 
+// State
 interface WelcomeState {
   name: string;
 }
@@ -22,7 +24,6 @@ export class Welcome extends React.Component<WelcomeProps, WelcomeState> {
     // 同じものを100行生成
     const lines: string[] = [];
     for (let i = 0; i < 100; i++) lines.push(this.state.name);
-    
     return (
       <div>
         <h1>Welcome</h1>
