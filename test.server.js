@@ -12,6 +12,7 @@ const mimeTypes = {
 
 const server = http.createServer();
 server.on("request", function(req, res) {
+  console.log(req.url);
   const filePath = req.url == "/" ? "/index.html" : req.url;
   const fullPath = path.join(__dirname, filePath);
 
