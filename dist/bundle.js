@@ -29356,6 +29356,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages */ "./src/Content/pages.tsx");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -29382,6 +29383,7 @@ var __assign = (undefined && undefined.__assign) || function () {
 };
 
 
+
 // Header Component
 var Header = /** @class */ (function (_super) {
     __extends(Header, _super);
@@ -29390,24 +29392,11 @@ var Header = /** @class */ (function (_super) {
     }
     // render
     Header.prototype.render = function () {
-        var home = {
-            name: "Home",
-            linkProps: { exact: true, to: "/" }
-        };
-        var about = {
-            name: "About",
-            linkProps: { exact: false, to: "/about" }
-        };
-        var Welcome = {
-            name: "Welcome",
-            linkProps: { exact: false, to: "/welcome" }
-        };
-        var pages = [home, about, Welcome];
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", null,
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("nav", null,
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, pages.map(function (page, i) {
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, _pages__WEBPACK_IMPORTED_MODULE_2__["pages"].map(function (page, i) {
                     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", { key: i },
-                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], __assign({}, page.linkProps, { className: "header-item", activeClassName: "active" }), page.name)));
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], __assign({ exact: page.exact }, page.link, { className: "header-item", activeClassName: "active" }), page.name)));
                 })))));
     };
     return Header;
@@ -29430,9 +29419,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-/* harmony import */ var _Hello_Hello__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Hello/Hello */ "./src/Content/Hello/Hello.tsx");
-/* harmony import */ var _About_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./About/About */ "./src/Content/About/About.tsx");
-/* harmony import */ var _Welcome_Welcome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Welcome/Welcome */ "./src/Content/Welcome/Welcome.tsx");
+/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages */ "./src/Content/pages.tsx");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -29460,8 +29447,6 @@ var __assign = (undefined && undefined.__assign) || function () {
 
 
 
-
-
 // Main Component
 var Main = /** @class */ (function (_super) {
     __extends(Main, _super);
@@ -29470,17 +29455,70 @@ var Main = /** @class */ (function (_super) {
     }
     // render
     Main.prototype.render = function () {
-        var home = { exact: true, path: "/", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Hello_Hello__WEBPACK_IMPORTED_MODULE_2__["Hello"], { greeting: "Hello!!" }); } };
-        var about = { exact: false, path: "/about", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_About_About__WEBPACK_IMPORTED_MODULE_3__["About"], null); } };
-        var welcome = { exact: false, path: "/welcome", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Welcome_Welcome__WEBPACK_IMPORTED_MODULE_4__["Welcome"], null); } };
-        var routes = [home, about, welcome];
-        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("main", null, routes.map(function (route, i) {
-            return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], __assign({ key: i }, route));
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("main", null, _pages__WEBPACK_IMPORTED_MODULE_2__["pages"].map(function (page, i) {
+            return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], __assign({ key: i, exact: page.exact }, page.route));
         })));
     };
     return Main;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
 
+
+
+/***/ }),
+
+/***/ "./src/Content/pages.tsx":
+/*!*******************************!*\
+  !*** ./src/Content/pages.tsx ***!
+  \*******************************/
+/*! exports provided: pages */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pages", function() { return pages; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Hello_Hello__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Hello/Hello */ "./src/Content/Hello/Hello.tsx");
+/* harmony import */ var _About_About__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./About/About */ "./src/Content/About/About.tsx");
+/* harmony import */ var _Welcome_Welcome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Welcome/Welcome */ "./src/Content/Welcome/Welcome.tsx");
+
+
+
+
+var home = {
+    name: "Home",
+    exact: true,
+    link: {
+        to: "/"
+    },
+    route: {
+        path: "/",
+        render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Hello_Hello__WEBPACK_IMPORTED_MODULE_1__["Hello"], { greeting: "Hello!!" }); }
+    }
+};
+var about = {
+    name: "About",
+    exact: false,
+    link: {
+        to: "/about"
+    },
+    route: {
+        path: "/about",
+        render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_About_About__WEBPACK_IMPORTED_MODULE_2__["About"], null); }
+    }
+};
+var welcome = {
+    name: "Welcome",
+    exact: false,
+    link: {
+        to: "/welcome"
+    },
+    route: {
+        path: "/welcome",
+        render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Welcome_Welcome__WEBPACK_IMPORTED_MODULE_3__["Welcome"], null); }
+    }
+};
+var pages = [home, about, welcome];
 
 
 /***/ }),
