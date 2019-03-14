@@ -29355,7 +29355,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./link */ "./src/Content/link.tsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -29390,65 +29390,27 @@ var Header = /** @class */ (function (_super) {
     }
     // render
     Header.prototype.render = function () {
-        var home = { exact: true, name: "Home", to: "/" };
-        var about = { exact: false, name: "About", to: "/about" };
-        var Welcome = { exact: false, name: "Welcome", to: "/welcome" };
+        var home = {
+            name: "Home",
+            linkProps: { exact: true, to: "/" }
+        };
+        var about = {
+            name: "About",
+            linkProps: { exact: false, to: "/about" }
+        };
+        var Welcome = {
+            name: "Welcome",
+            linkProps: { exact: false, to: "/welcome" }
+        };
         var pages = [home, about, Welcome];
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", null,
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("nav", null,
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, pages.map(function (page, i) {
-                    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_link__WEBPACK_IMPORTED_MODULE_1__["LinkList"], __assign({ key: i }, page));
+                    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", { key: i },
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], __assign({}, page.linkProps, { className: "header-item", activeClassName: "active" }), page.name)));
                 })))));
     };
     return Header;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
-
-
-
-/***/ }),
-
-/***/ "./src/Content/link.tsx":
-/*!******************************!*\
-  !*** ./src/Content/link.tsx ***!
-  \******************************/
-/*! exports provided: LinkList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkList", function() { return LinkList; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-var __extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-// LinkList Component
-var LinkList = /** @class */ (function (_super) {
-    __extends(LinkList, _super);
-    // constructor
-    function LinkList(props) {
-        return _super.call(this, props) || this;
-    }
-    // render
-    LinkList.prototype.render = function () {
-        var _a = this.props, exact = _a.exact, name = _a.name, to = _a.to;
-        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], { exact: exact, to: to, className: "header-item", activeClassName: "active" }, name)));
-    };
-    return LinkList;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
 
 
@@ -29484,6 +29446,17 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 
 
 
@@ -29497,10 +29470,13 @@ var Main = /** @class */ (function (_super) {
     }
     // render
     Main.prototype.render = function () {
-        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("main", null,
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: "/", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Hello_Hello__WEBPACK_IMPORTED_MODULE_2__["Hello"], { greeting: "Hello!!" }); } }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: "/about", component: _About_About__WEBPACK_IMPORTED_MODULE_3__["About"] }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: "/welcome", component: _Welcome_Welcome__WEBPACK_IMPORTED_MODULE_4__["Welcome"] })));
+        var home = { exact: true, path: "/", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Hello_Hello__WEBPACK_IMPORTED_MODULE_2__["Hello"], { greeting: "Hello!!" }); } };
+        var about = { exact: false, path: "/about", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_About_About__WEBPACK_IMPORTED_MODULE_3__["About"], null); } };
+        var welcome = { exact: false, path: "/welcome", render: function () { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Welcome_Welcome__WEBPACK_IMPORTED_MODULE_4__["Welcome"], null); } };
+        var routes = [home, about, welcome];
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("main", null, routes.map(function (route, i) {
+            return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], __assign({ key: i }, route));
+        })));
     };
     return Main;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));

@@ -8,11 +8,15 @@ import { Welcome } from "./Welcome/Welcome";
 export class Main extends React.Component {
   // render
   render() {
+    const home = {exact: true, path: "/", render: () => <Hello greeting="Hello!!" />};
+    const about = {exact: false, path: "/about", render: () => <About />};
+    const welcome = {exact: false, path: "/welcome", render: () => <Welcome />};
+    const routes = [home, about, welcome];
     return (
       <main>
-        <Route exact path="/" render={() => <Hello greeting="Hello!!" />} />
-        <Route path="/about" component={About} />
-        <Route path="/welcome" component={Welcome} />
+        {routes.map((route, i) => {
+          return <Route key={i} {...route} />;
+        })}
       </main>
     );
   }
