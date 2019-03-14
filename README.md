@@ -12,16 +12,16 @@ I will test variable page.
 ├── index.html
 └── src/
     ├── App.tsx
-    ├── Content/
-    │   ├── About/
+    ├── Content
+    │   ├── About
     │   │   └── About.tsx
-    │   ├── Welcome/
-    │   │   └── Welcome.tsx
-    │   ├── Hello/
+    │   ├── Hello
     │   │   └── Hello.tsx
+    │   ├── Welcome
+    │   │   └── Welcome.tsx
     │   ├── header.tsx
-    │   ├── link.tsx
-    │   └── main.tsx
+    │   ├── main.tsx
+    │   └── pages.tsx
     └── index.tsx
 ```
 
@@ -31,7 +31,9 @@ I will test variable page.
 $ yarn init --yes
 $ yarn add react react-dom
 $ yarn add typescript ts-loader --dev
-$ yarn add @types/react @types/react-dom
+$ yarn add @types/react @types/react-dom --dev
+$ yarn add react-router-dom
+$ yarn add @types/react-router-dom --dev
 $ yarn global add webpack webpack-cli
 $ tsc --init
 $ vim tsconfig.json # set up
