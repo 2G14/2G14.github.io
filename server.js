@@ -5,8 +5,8 @@ const fs = require("fs");
 const path = require("path");
 const url = require("url");
 
-const mimeTypes = require("./server/mimetypes");
-const whitelist = require("./server/whitelist");
+const mimeTypes = require("./serverContent/mimetypes");
+const whitelist = require("./serverContent/whitelist");
 
 const server = http.createServer();
 server.on("request", function(request, response) {
