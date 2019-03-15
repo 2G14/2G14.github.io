@@ -8,7 +8,7 @@
     "scss": "node-sass css/index.scss css/index.css",
     "open": "open ./index.html",
     "bundle": "yarn clean && yarn build",
-    "test": "node test.server.js"
+    "test": "node ./server.js"
   },
   "dependencies": {
     "react": "^16.8.3",
