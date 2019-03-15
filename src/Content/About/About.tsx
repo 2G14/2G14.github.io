@@ -1,23 +1,18 @@
 import * as React from "react";
-
-// Props
-interface AboutProps {}
-
-// State
-interface AboutState {}
+import { Twitter } from "./Twitter";
+import { GitHub } from "./GitHub";
 
 // About
-export class About extends React.Component<AboutProps, AboutState> {
-  // constructor
-  constructor(props: AboutProps) {
-    super(props);
-    this.state = {};
-  }
+export class About extends React.Component {
   // render
-  render(): JSX.Element {
+  render() {
     return (
       <div>
         <h1>About</h1>
+        <ul>
+          <li><Twitter /></li>
+          <li><GitHub /></li>
+        </ul>
       </div>
     );
   }

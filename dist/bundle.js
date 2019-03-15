@@ -29182,6 +29182,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "About", function() { return About; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Twitter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Twitter */ "./src/Content/About/Twitter.tsx");
+/* harmony import */ var _GitHub__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GitHub */ "./src/Content/About/GitHub.tsx");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -29196,21 +29198,111 @@ var __extends = (undefined && undefined.__extends) || (function () {
     };
 })();
 
+
+
 // About
 var About = /** @class */ (function (_super) {
     __extends(About, _super);
-    // constructor
-    function About(props) {
-        var _this = _super.call(this, props) || this;
-        _this.state = {};
-        return _this;
+    function About() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     // render
     About.prototype.render = function () {
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "About")));
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "About"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null,
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Twitter__WEBPACK_IMPORTED_MODULE_1__["Twitter"], null)),
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_GitHub__WEBPACK_IMPORTED_MODULE_2__["GitHub"], null)))));
     };
     return About;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/Content/About/GitHub.tsx":
+/*!**************************************!*\
+  !*** ./src/Content/About/GitHub.tsx ***!
+  \**************************************/
+/*! exports provided: GitHub */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GitHub", function() { return GitHub; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var GitHub = /** @class */ (function (_super) {
+    __extends(GitHub, _super);
+    function GitHub() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    GitHub.prototype.render = function () {
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", { href: "https://github.com/2G14", target: "_blank" },
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", { src: "./../../../img/GitHub-Mark-Light-120px-plus.png", alt: "github" })));
+    };
+    return GitHub;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/Content/About/Twitter.tsx":
+/*!***************************************!*\
+  !*** ./src/Content/About/Twitter.tsx ***!
+  \***************************************/
+/*! exports provided: Twitter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Twitter", function() { return Twitter; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+// Twitter Component
+var Twitter = /** @class */ (function (_super) {
+    __extends(Twitter, _super);
+    function Twitter() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    // render
+    Twitter.prototype.render = function () {
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", { href: "https://twitter.com/TSJKZSH", target: "_blank" },
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", { src: "./../../../img/Twitter_Logo_Blue.png", alt: "twitter" })));
+    };
+    return Twitter;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
 
 
