@@ -72,6 +72,8 @@ I use
 - typescript
 - scss
 
+### set up
+
 ```bash
 $ yarn init --yes -p
 $ yarn add react react-dom
@@ -86,7 +88,7 @@ $ vim webpack.config.dev.js # set up
 $ vim package.json # write scripts
 ```
 
-# build
+## build
 
 ```bash
 $ yarn bundle
