@@ -50,6 +50,7 @@ function onRequest(request, response) {
     response.write(data);
     response.end();
   }
+  // file upload : encode UTF-8 or binary
   switch (path.extname(fullPath)) {
     case ".html":
     case ".css":
