@@ -10,7 +10,6 @@ I will test variable page.
 
 ```src tree
 .
-├── index.html
 └── src/
     ├── App.tsx
     ├── Content
@@ -61,16 +60,16 @@ I will test variable page.
 
 my environment is
 
-・macOS X
-・homebrew
-・node.js
-・yarn
+- macOS X
+- homebrew
+- node.js
+- yarn
 
 I use
 
-・react
-・typescript
-・scss
+- react
+- typescript
+- scss
 
 ```bash
 $ yarn init --yes -p
