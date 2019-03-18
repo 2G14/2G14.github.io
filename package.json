@@ -2,6 +2,7 @@
   "name": "pages",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "clean": "rm -rf ./public/dist/*",
     "build": "webpack --colors --display-modules --config ./webpack.config.dev.js",

@@ -6,6 +6,8 @@ I will test variable page.
 
 ## src tree
 
+### typescript src tree
+
 ```src tree
 .
 ├── index.html
@@ -24,6 +26,8 @@ I will test variable page.
     └── index.tsx
 ```
 
+### public content tree
+
 ```public content
 .
 ├── index.html
@@ -41,6 +45,8 @@ I will test variable page.
         └── favicon.ico
 ```
 
+### test server
+
 ```test server
 .
 ├── server.js # test server
@@ -51,8 +57,23 @@ I will test variable page.
 
 ## set up
 
+### environment
+
+my environment is
+
+・macOS X
+・homebrew
+・node.js
+・yarn
+
+I use
+
+・react
+・typescript
+・scss
+
 ```bash
-$ yarn init --yes
+$ yarn init --yes -p
 $ yarn add react react-dom
 $ yarn add typescript ts-loader --dev
 $ yarn add @types/react @types/react-dom --dev
