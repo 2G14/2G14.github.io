@@ -29206,12 +29206,12 @@ var About = /** @class */ (function (_super) {
     About.prototype.render = function () {
         var twitter = {
             href: "https://twitter.com/TSJKZSH",
-            src: "./../../../img/Twitter_Logo_Blue.png",
+            src: "./../../../public/img/Twitter_Logo_Blue.png",
             alt: "twitter"
         };
         var github = {
             href: "https://github.com/2G14",
-            src: "./../../../img/GitHub-Mark-Light-120px-plus.png",
+            src: "./../../../public/img/GitHub-Mark-Light-120px-plus.png",
             alt: "github"
         };
         var links = [twitter, github];

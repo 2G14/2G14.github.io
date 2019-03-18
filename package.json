@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf ./dist/*",
+    "clean": "rm -rf ./public/dist/*",
     "build": "webpack --colors --display-modules --config ./webpack.config.dev.js",
-    "scss": "node-sass css/index.scss css/index.css",
+    "scss": "node-sass ./public/css/scss/index.scss ./public/css/index.css",
     "open": "open ./index.html",
     "bundle": "yarn clean && yarn build",
     "test": "node ./server.js"

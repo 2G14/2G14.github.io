@@ -6,12 +6,12 @@ export class About extends React.Component {
   render() {
     const twitter = {
       href: "https://twitter.com/TSJKZSH",
-      src: "./../../../img/Twitter_Logo_Blue.png",
+      src: "./../../../public/img/Twitter_Logo_Blue.png",
       alt: "twitter"
     };
     const github = {
       href: "https://github.com/2G14",
-      src: "./../../../img/GitHub-Mark-Light-120px-plus.png",
+      src: "./../../../public/img/GitHub-Mark-Light-120px-plus.png",
       alt: "github"
     };
     const links = [twitter, github];
