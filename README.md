@@ -2,6 +2,7 @@
 
 ## about
 test page is react + typescript(+ scss) sample page now.
+
 I will test variable page.
 
 ## src tree
@@ -12,12 +13,12 @@ I will test variable page.
 .
 └── src/
     ├── App.tsx
-    ├── Content
-    │   ├── About
+    ├── Content/
+    │   ├── About/
     │   │   └── About.tsx
-    │   ├── Hello
+    │   ├── Hello/
     │   │   └── Hello.tsx
-    │   ├── Welcome
+    │   ├── Welcome/
     │   │   └── Welcome.tsx
     │   ├── header.tsx
     │   ├── main.tsx
@@ -31,14 +32,14 @@ I will test variable page.
 .
 ├── index.html
 └── public/
-    ├── css
+    ├── css/
     │   ├── index.css
-    │   └── scss
+    │   └── scss/
     │       └── index.scss
-    ├── dist
+    ├── dist/
     │   ├── bundle.js
     │   └── bundle.js.map
-    └── img
+    └── img/
         ├── GitHub-Mark-Light-120px-plus.png
         ├── Twitter_Logo_Blue.png
         └── favicon.ico
